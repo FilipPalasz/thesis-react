@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -21,7 +22,7 @@ body {
 }
 
 .logo-img {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
@@ -39,9 +40,10 @@ body {
 
 .support {
   background: #1D2F6F;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  color: white !important;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .sub-header {
@@ -104,11 +106,6 @@ body {
   font-family: 'Space+Mono', monospace;
 }
 
-.title {
-  font-size: 1.6rem;
-  margin-bottom: 0.2rem;
-}
-
 .title.large {
   font-size: 2rem;
   font-family: 'Space Mono', monospace;
@@ -126,6 +123,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   margin: 0.25rem 0;
+  font-weight: 300;
 }
 
 .form-section {
@@ -200,8 +198,19 @@ input[type="text"] {
   margin-top: 0.3rem;
 }
 
+.required {
+  color: red;
+}
+
 .valid-input {
-  border: 2px solid #00C31D;
+  border: 2px solid #00C31D !important;
+}
+
+.field-note {
+  font-size: 0.85rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .status.pending span {

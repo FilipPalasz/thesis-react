@@ -4,27 +4,17 @@ import "./AssignmentForm.css";
 import logo from "./hyflogo.svg";
 
 export default function AssignmentForm() {
-  const [links, setLinks] = useState([{ url: "", title: "", valid: false }]);
+  const [links, setLinks] = useState([{ url: "", title: "" }]);
   const [submitted, setSubmitted] = useState(false);
-
-  const validateUrl = (url) => {
-    try {
-      new URL(url);
-      return true;
-    } catch (_) {
-      return false;
-    }
-  };
 
   const handleChange = (index, field, value) => {
     const newLinks = [...links];
     newLinks[index][field] = value;
-    newLinks[index].valid = validateUrl(newLinks[index].url) && newLinks[index].title.trim() !== "";
     setLinks(newLinks);
   };
 
   const addLink = () => {
-    setLinks([...links, { url: "", title: "", valid: false }]);
+    setLinks([...links, { url: "", title: "" }]);
   };
 
   const removeLink = () => {
@@ -57,45 +47,50 @@ export default function AssignmentForm() {
         </div>
         <div className="right-sub">
           <div className="user-info">
-            <span>Signed in as – Amina Rahimi</span>
+            <span>Signed in as - Amina Rahimi</span>
             <button className="logout-button">← Log Out</button>
           </div>
         </div>
       </div>
 
       <div className="main-section">
-        <h1 className="title large">Homework assignment, React 1/4</h1>
-        <h1 className="title">Deadline: May. 03, 12:00</h1>
+        <h1 className="title large">
+          Homework assignment, React 1/4<br />
+          <span className="title deadline-inline">Deadline: May. 03, 12:00</span>
+        </h1>
         <p className="week">Week 18</p>
         <p><a href="#">React 2</a></p>
       </div>
 
       <form onSubmit={handleSubmit} className="form-section">
-        {links.map((link, index) => (
-          <div key={index} className="inputs-row">
-            <div className="input-group">
-              <label>* URL</label>
-              <input
-                type="text"
-                placeholder="Enter URL/Link"
-                value={link.url}
-                onChange={(e) => handleChange(index, "url", e.target.value)}
-                required
-                className={link.valid ? "valid-input" : ""}
-              />
+        <div className="field-note"><span className="required">*</span> - field required</div>
+
+        {links.map((link, index) => {
+          return (
+            <div key={index} className="inputs-row">
+              <div className="input-group">
+                <label><span className="required">*</span> URL</label>
+                <input
+                  type="text"
+                  placeholder="Enter URL/Link"
+                  value={link.url}
+                  onChange={(e) => handleChange(index, "url", e.target.value)}
+                  className={link.url.trim() !== "" ? "valid-input" : ""}
+                />
+              </div>
+              <div className="input-group">
+                <label>Title</label>
+                <input
+                  type="text"
+                  placeholder="Add Title to URL/Link"
+                  value={link.title}
+                  onChange={(e) => handleChange(index, "title", e.target.value)}
+                  className={link.title.trim() !== "" ? "valid-input" : ""}
+                />
+              </div>
             </div>
-            <div className="input-group">
-              <label>Title</label>
-              <input
-                type="text"
-                placeholder="Add Title to URL/Link"
-                value={link.title}
-                onChange={(e) => handleChange(index, "title", e.target.value)}
-                className={link.valid ? "valid-input" : ""}
-              />
-            </div>
-          </div>
-        ))}
+          );
+        })}
 
         <div className="link-controls">
           <div className="add-link" onClick={addLink}>+ add additional link</div>
