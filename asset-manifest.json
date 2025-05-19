@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/thesis-react/static/css/main.34364cc6.css",
+    "main.js": "/thesis-react/static/js/main.08703d12.js",
+    "static/media/hyflogo.svg": "/thesis-react/static/media/hyflogo.c809caf183591ff330457f822e472bbc.svg",
+    "index.html": "/thesis-react/index.html",
+    "main.34364cc6.css.map": "/thesis-react/static/css/main.34364cc6.css.map",
+    "main.08703d12.js.map": "/thesis-react/static/js/main.08703d12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34364cc6.css",
+    "static/js/main.08703d12.js"
+  ]
+}
