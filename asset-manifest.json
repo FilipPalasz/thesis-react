@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/thesis-react/static/css/main.34364cc6.css",
-    "main.js": "/thesis-react/static/js/main.08703d12.js",
-    "static/media/hyflogo.svg": "/thesis-react/static/media/hyflogo.c809caf183591ff330457f822e472bbc.svg",
+    "main.css": "/thesis-react/static/css/main.2592080c.chunk.css",
+    "main.js": "/thesis-react/static/js/main.ab89713c.chunk.js",
+    "main.js.map": "/thesis-react/static/js/main.ab89713c.chunk.js.map",
+    "runtime-main.js": "/thesis-react/static/js/runtime-main.d49cd8c7.js",
+    "runtime-main.js.map": "/thesis-react/static/js/runtime-main.d49cd8c7.js.map",
+    "static/js/2.4ef0229e.chunk.js": "/thesis-react/static/js/2.4ef0229e.chunk.js",
+    "static/js/2.4ef0229e.chunk.js.map": "/thesis-react/static/js/2.4ef0229e.chunk.js.map",
     "index.html": "/thesis-react/index.html",
-    "main.34364cc6.css.map": "/thesis-react/static/css/main.34364cc6.css.map",
-    "main.08703d12.js.map": "/thesis-react/static/js/main.08703d12.js.map"
+    "precache-manifest.169f0adc5a6fae050df3b5f4d72a8117.js": "/thesis-react/precache-manifest.169f0adc5a6fae050df3b5f4d72a8117.js",
+    "service-worker.js": "/thesis-react/service-worker.js",
+    "static/css/main.2592080c.chunk.css.map": "/thesis-react/static/css/main.2592080c.chunk.css.map",
+    "static/js/2.4ef0229e.chunk.js.LICENSE.txt": "/thesis-react/static/js/2.4ef0229e.chunk.js.LICENSE.txt",
+    "static/media/hyflogo.svg": "/thesis-react/static/media/hyflogo.d5ca51e5.svg"
   },
   "entrypoints": [
-    "static/css/main.34364cc6.css",
-    "static/js/main.08703d12.js"
+    "static/js/runtime-main.d49cd8c7.js",
+    "static/js/2.4ef0229e.chunk.js",
+    "static/css/main.2592080c.chunk.css",
+    "static/js/main.ab89713c.chunk.js"
   ]
 }
