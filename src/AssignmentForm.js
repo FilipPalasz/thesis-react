@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AssignmentForm.css";
-import logo from "./hyflogo.svg"; //import everything (css, logo svg)
+import logo from "./hyflogo.svg"; //import everything (css, logo svg))
 
 export default function AssignmentForm() {
   const [links, setLinks] = useState([{ url: "", title: "" }]);
